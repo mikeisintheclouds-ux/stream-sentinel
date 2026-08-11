@@ -1,0 +1,48 @@
+{
+  "name": "stream-sentinel",
+  "version": "1.0.0",
+  "description": "Production-grade RTSP dual-stream health monitor and config generator for multi-camera NVR fleets (Lorex, Reolink, ONVIF).",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "stream-sentinel": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "check": "tsx src/cli.ts check",
+    "generate": "tsx src/cli.ts generate",
+    "test": "node --test dist/**/*.test.js",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "rtsp",
+    "onvif",
+    "nvr",
+    "lorex",
+    "reolink",
+    "camera",
+    "dual-stream",
+    "health-check",
+    "surveillance",
+    "ffmpeg",
+    "frigate",
+    "go2rtc"
+  ],
+  "author": "Mike O'Connor",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "yaml": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

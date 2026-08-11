@@ -1,0 +1,35 @@
+[
+  {
+    "id": "hg-01",
+    "name": "Hickory Grove Gate",
+    "vendor": "lorex",
+    "host": "192.168.1.10",
+    "port": 554,
+    "username": "admin",
+    "password": "CHANGE_ME",
+    "channel": 1,
+    "site": "hickory-grove",
+    "tags": ["perimeter", "gate"]
+  },
+  {
+    "id": "pd-01",
+    "name": "Pendleton Lot",
+    "vendor": "reolink",
+    "host": "192.168.1.20",
+    "username": "admin",
+    "password": "CHANGE_ME",
+    "channel": 1,
+    "site": "pendleton",
+    "tags": ["lot"]
+  },
+  {
+    "id": "yk-01",
+    "name": "York Front",
+    "vendor": "lorex",
+    "host": "192.168.1.30",
+    "username": "admin",
+    "password": "CHANGE_ME",
+    "channel": 1,
+    "site": "york"
+  }
+]
